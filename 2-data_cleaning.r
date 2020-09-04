@@ -17,7 +17,7 @@ message("\n\n | 1. Reading data...")
 ##-list all package functions for [...]
 #ls("package:readr") %>% print()
 
-powerUsage   <- read_delim("./downloads/household_power_consumption2.txt", delim = ";")
+powerUsage   <- read_delim("C:/Users/msode/Desktop/household_power_consumption2.txt", delim = ";")
 message("\n\n | | 1.1. viewing data contents...")
 powerUsage %>% print()
 message("\n\n | | 1.2. viewing each variable's class...")
@@ -36,9 +36,9 @@ powerUsage2 	     <- powerUsage[search2, ]
 powerUsage2$date     <- dmy(powerUsage2$date)
 powerUsage3          <- unite(powerUsage2, date, time, col = "date", sep = " ")
 powerUsage3$date     <- ymd_hms(powerUsage3$date)
-powerUsage4 	     <- reshape::melt(df, id.vars = c("date", "global_active_power", "global_reactive_power", "voltage", "global_intensity"))
+powerUsage3          <- as.data.frame(powerUsage3)
+powerUsage4 	     <- reshape::melt(powerUsage3, id.vars = c("date", "global_active_power",
+							       "global_reactive_power", "voltage",
+							       "global_intensity"))
 powerUsage4          <- as_tibble(powerUsage4)
 powerUsage4 %>% print()
-
-##-clear objects after task completed
-#rm(list=ls())
