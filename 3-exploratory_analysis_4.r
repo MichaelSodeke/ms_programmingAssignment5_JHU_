@@ -57,7 +57,7 @@ p4 <- p4 + scale_x_datetime(breaks = breaks_width("1 day"), labels = date_format
 
 ## ---------------- multi-plot --------------------------------------------------------------
 ggarrange(p1, p2, p3, p4, nrow = 2, ncol = 2) %>% print()
-ggsave("plot4.png", width = 13.335, height = 13.335, units = "cm")
+ggsave("plot4.png", width = 12.7, height = 12.7, units = "cm")
 
 
 ##-clear objects after task completed

@@ -15,4 +15,4 @@ p3 <- p3 + labs(y = "Energy Sub Metering")
 p3 <- p3 + scale_x_datetime(breaks = breaks_width("1 day"), labels = date_format("%a"))
 p3 %>% print()
 
-ggsave("plot3.png", width = 13.335, height = 13.335, units = "cm")
+ggsave("plot3.png", width = 12.7, height = 12.7, units = "cm")
