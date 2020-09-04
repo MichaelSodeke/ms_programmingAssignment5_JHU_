@@ -16,4 +16,4 @@ p1 <- p1 + scale_fill_gradient(low = "lightblue", high = "purple")
 p1 <- p1 + theme(legend.position =  c(0.92, 0.9))
 p1 %>% print()
 
-ggsave("plot1.png", width = 12.7, height = 12.7, units = "cm")
+ggsave("plot1.png", dp = 72, width = 6, height = 6)
