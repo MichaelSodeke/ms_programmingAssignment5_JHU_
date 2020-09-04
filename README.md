@@ -4,9 +4,8 @@
 This assignment uses data from
 the <a href="http://archive.ics.uci.edu/ml/">UC Irvine Machine
 Learning Repository</a>, a popular repository for machine learning
-datasets. In particular, we will be using the "Individual household
-electric power consumption Data Set" which I have made available on
-the course web site:
+datasets. In particular,I will be using the "Individual household
+electric power consumption Data Set" below:
 
 
 * <b>Dataset</b>: <a href="https://d396qusza40orc.cloudfront.net/exdata%2Fdata%2Fhousehold_power_consumption.zip">Electric power consumption</a> [20Mb]
@@ -36,7 +35,24 @@ web site</a>:
 
 # PROCEDURE
 
-[more info about the task].
+When loading the dataset into R, please consider the following:
+
+* The dataset has 2,075,259 rows and 9 columns. First
+calculate a rough estimate of how much memory the dataset will require
+in memory before reading into R. Make sure your computer has enough
+memory (most modern computers should be fine).
+
+* Data from the dates 2007-02-01 and 2007-02-02 will only be used. 
+One alternative is to read the data from just those dates
+rather than reading in the entire dataset and subsetting to those
+dates. **Currently**, I am **unfamiliar** with the former method.
+
+* ` date ` was first converted with ` dmy() ` function. Both ` date `
+and ` time ` variables were united into ` date ` variable with
+` unit() ` function. Finally, ` date ` was converted with ` ymd_hms() `
+to create a Date/Time class in R. 
+
+* Note that in this dataset missing values are coded as `?`.
 
 1.  ` var1/fun1 `: This [thing] [does something].
 2.  ` var2/fun2 `: This [thing] [does something].
@@ -46,7 +62,7 @@ web site</a>:
 
 [additional notes about the task]
 
-# CODEBOOK
+# CODEBOOK (in progress)
 
 The first var/fun, ` blah ` [does something]
 
@@ -64,10 +80,10 @@ info.
 
     code block 1
 
-### ▢ final results
+### ▢ final results (in progress)
 
     code block 1
 
-# CITATIONS
+# CITATIONS (in progress)
 
 citation info.
